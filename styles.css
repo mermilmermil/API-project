@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Add Google Font */
+  background-color: #0b0c10; /* Dark space-like background */
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Subtle star texture */
+  color: #c5c6c7; /* Light text for contrast */
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1f2833, #0b0c10);
+  color: white;
+  display: flex;
+  align-items: center; /* Align items on the same level */
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #66fcf1; /* Neon star-like color */
+  font-size: 1.5rem;
+}
+
+.navbar .form-control {
+  border-radius: 20px;
+  border: 2px solid #45a29e;
+  background-color: #1f2833;
+  color: #c5c6c7;
+}
+
+.navbar .btn {
+  border-radius: 20px;
+  color: #1f2833;
+  background-color: #66fcf1;
+}
+
+.navbar .form-control::placeholder {
+  color: #c5c6c7; /* Match text color for placeholder */
+}
+
+.navbar-brand {
+  padding-top: 1%;
+}
+
+.card {
+  margin: 2% auto;
+  width: 90%; /* Fill most of the screen */
+  height: 90vh; /* Fill most of the viewport height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  border-radius: 15px; /* Slightly more rounded corners */
+  overflow: hidden;
+  background: #1f2833; /* Space-themed color */
+  color: #c5c6c7; /* Light text for readability */
+  border: 1px solid #45a29e;
+}
+
+.card .card-body {
+  padding: 1.5rem;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starry texture in card body */
+}
+
+.card .card-title {
+  font-size: 1.75rem;
+  color: #66fcf1; /* Vibrant star color */
+  font-weight: bold;
+}
+
+.card .card-text {
+  color: #c5c6c7;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #45a29e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(102, 252, 241, 0.5); /* Glow effect */
+}
