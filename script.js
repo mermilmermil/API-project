@@ -8,14 +8,12 @@ const todayDay = String(today.getDate()).padStart(2, '0'); // Ensures 2-digit fo
 
 
 const formattedDate = `${todayYear}-${todayMonth}-${todayDay}`;
-console.log(formattedDate);
 
 document.addEventListener("DOMContentLoaded", () => {
   getNewRequest(formattedDate)
 })
 
 function getNewRequest(day) {
-  console.log(day)
   fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${day}`)
   .then(response => response.json())
   .then(data=> {changeCard(data)})
@@ -25,7 +23,6 @@ function getNewRequest(day) {
 }
 
 function changeCard(data) {
-  console.log(data)
   cardDiv.innerHTML = `<div class="card-body" >
       <h5 class="card-title">${data.date}</h5>
       <b class="card-text">${data.title}</b>
